@@ -1,10 +1,11 @@
-import {Icon, Marker} from 'leaflet';
+import {Icon, LayerGroup, Marker} from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import {RoomOffer, Offers} from '../../types/offer';
 import {City} from '../../types/city';
 import {useRef, useEffect} from 'react';
 import useMap from '../../hooks/useMap';
 import {URL_MARKER_DEFAULT, URL_MARKER_CURRENT} from '../../const';
+import React from 'react';
 
 type PageProps = {
   offers: Offers;
@@ -29,6 +30,8 @@ function Map({offers, activeCard, city}: PageProps): JSX.Element {
   const map = useMap(mapRef, city);
 
   useEffect(() => {
+    const markerGroup = new LayerGroup();
+
     if (map) {
       map.setView([city.location.latitude, city.location.longitude]);
       offers.forEach((offer) => {
@@ -42,13 +45,22 @@ function Map({offers, activeCard, city}: PageProps): JSX.Element {
             activeCard !== undefined && (offer.location.latitude === activeCard.location.latitude && offer.location.longitude === activeCard.location.longitude)
               ? currentCustomIcon
               : defaultCustomIcon
-          )
-          .addTo(map);
+          );
+
+        marker.addTo(markerGroup);
       });
+
+      markerGroup.addTo(map);
     }
+
+    return () => {
+      if (map) {
+        map.removeLayer(markerGroup);
+      }
+    };
   }, [map, offers, activeCard, city]);
 
   return <div style={{height: '100%'}} ref={mapRef} data-testid="map"></div>;
 }
 
-export default Map;
+export default React.memo(Map);
