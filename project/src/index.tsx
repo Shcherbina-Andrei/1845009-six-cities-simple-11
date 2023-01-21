@@ -5,6 +5,7 @@ import App from './components/app/app';
 import {store} from './store/index';
 import {ToastContainer} from 'react-toastify';
 import {fetchOffersAction, checkAuthAction} from './store/api-actions';
+import './css/main.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { HashRouter } from 'react-router-dom';
 
