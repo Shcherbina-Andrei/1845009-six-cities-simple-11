@@ -1,4 +1,6 @@
-import { City } from './types/city';
+import {City} from './types/city';
+import pinIcon from './img/pin.svg';
+import currentPinIcon from './img/pin-active.svg';
 
 export enum AppRoute {
   Login = '/login',
@@ -93,8 +95,8 @@ export enum SortTypes {
 
 export const ratings: number[] = [5, 4, 3, 2, 1];
 
-export const URL_MARKER_DEFAULT = 'https://shcherbina-andrei.github.io/1845009-six-cities-simple-11/img/pin.svg';
+export const URL_MARKER_DEFAULT = pinIcon;
 
-export const URL_MARKER_CURRENT = 'https://shcherbina-andrei.github.io/1845009-six-cities-simple-11/img/pin-active.svg';
+export const URL_MARKER_CURRENT = currentPinIcon;
 
 

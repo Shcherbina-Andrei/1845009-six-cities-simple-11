@@ -1,7 +1,6 @@
 {
   "name": "project",
   "version": "0.1.0",
-  "homepage": "https://shcherbina-andrei.github.io/1845009-six-cities-simple-11",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",

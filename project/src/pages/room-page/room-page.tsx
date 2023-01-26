@@ -9,6 +9,7 @@ import Map from '../../components/map/map';
 import {useEffect} from 'react';
 import LoadingScreen from '../../components/loading-screen/loading-screen';
 import {getCurrentNearOffers, getCurrentOffer} from '../../store/offers-data/selectors';
+import hostAvatar from '../../img/avatar-angelina.jpg';
 
 function RoomPage(): JSX.Element {
   const params = useParams();
@@ -95,7 +96,7 @@ function RoomPage(): JSX.Element {
               <h2 className="property__host-title">Meet the host</h2>
               <div className="property__host-user user">
                 <div className={`property__avatar-wrapper ${host.isPro ? 'property__avatar-wrapper--pro' : ''} user__avatar-wrapper`}>
-                  <img className="property__avatar user__avatar" src={`https://shcherbina-andrei.github.io/1845009-six-cities-simple-11/${host.avatarUrl}`} width="74" height="74" alt="Host avatar"/>
+                  <img className="property__avatar user__avatar" src={hostAvatar} width="74" height="74" alt="Host avatar"/>
                 </div>
                 <span className="property__user-name">
                   {host.name}

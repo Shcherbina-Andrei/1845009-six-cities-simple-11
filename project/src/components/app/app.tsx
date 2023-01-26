@@ -39,21 +39,21 @@ function App(): JSX.Element {
             index
             element={<MainPage />}
           />
-          <Route
-            path={AppRoute.NotFound}
-            element={<NotFoundPage />}
-          />
           <Route path={AppRoute.Offers}>
             <Route
               path={AppRoute.Room}
               element={<RoomPage />}
             />
-            <Route
-              path={AppRoute.NotFound}
-              element={<NotFoundPage />}
-            />
           </Route>
+          <Route
+            path={AppRoute.NotFound}
+            element={<NotFoundPage />}
+          />
         </Route>
+        <Route
+          path={AppRoute.NotFound}
+          element={<NotFoundPage />}
+        />
         <Route
           path={AppRoute.Login}
           element={<LoginPage />}
