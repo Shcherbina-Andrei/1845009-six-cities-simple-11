@@ -29,10 +29,15 @@ export const offersData = createSlice({
         state.isOffersDataLoading = false;
         state.hasError = true;
       })
+      .addCase(fetchOfferAction.pending, (state, action) => {
+        state.isOffersDataLoading = true;
+      })
       .addCase(fetchOfferAction.fulfilled, (state, action) => {
+        state.isOffersDataLoading = false;
         state.currentOffer = action.payload;
       })
       .addCase(fetchOfferAction.rejected, (state) => {
+        state.isOffersDataLoading = false;
         state.currentOffer = null;
       })
       .addCase(fetchNearOffersAction.fulfilled, (state, action) => {

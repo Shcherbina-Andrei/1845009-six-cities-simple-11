@@ -10,15 +10,14 @@ import ScrollToTop from '../scroll-to-top/scroll-to-top';
 import {useAppSelector} from '../../hooks';
 import LoadingScreen from '../loading-screen/loading-screen';
 import {getAuthCheckedStatus} from '../../store/user-process/selectors';
-import {getErrorStatus, getOffersDataLoadingStatus} from '../../store/offers-data/selectors';
+import {getErrorStatus} from '../../store/offers-data/selectors';
 import ErrorScreen from '../../pages/error-screen/error-screen';
 
 function App(): JSX.Element {
   const isAuthChecked = useAppSelector(getAuthCheckedStatus);
-  const isOffersDataLoading = useAppSelector(getOffersDataLoadingStatus);
   const hasError = useAppSelector(getErrorStatus);
 
-  if (!isAuthChecked || isOffersDataLoading) {
+  if (!isAuthChecked) {
     return (
       <LoadingScreen />);
   }

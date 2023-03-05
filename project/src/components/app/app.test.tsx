@@ -33,7 +33,7 @@ const fakeApp = (
 );
 
 describe('Application Routing', () => {
-  it('should render "MainPaige" when user navigate to  "/"', () => {
+  it('should render "MainPage" when user navigate to  "/"', () => {
     history.push(AppRoute.Root);
 
     render(fakeApp);

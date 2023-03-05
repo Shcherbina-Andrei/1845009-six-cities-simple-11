@@ -8,7 +8,7 @@ import {store} from '../../store/index';
 import Map from '../../components/map/map';
 import {useEffect} from 'react';
 import LoadingScreen from '../../components/loading-screen/loading-screen';
-import {getCurrentNearOffers, getCurrentOffer} from '../../store/offers-data/selectors';
+import {getCurrentNearOffers, getCurrentOffer, getOffersDataLoadingStatus} from '../../store/offers-data/selectors';
 import hostAvatar from '../../img/avatar-angelina.jpg';
 
 function RoomPage(): JSX.Element {
@@ -21,9 +21,10 @@ function RoomPage(): JSX.Element {
 
   const currentOffer = useAppSelector(getCurrentOffer);
   const nearOffers = useAppSelector(getCurrentNearOffers);
+  const loadingStatus = useAppSelector(getOffersDataLoadingStatus);
   const maxPhoto = 6;
 
-  if (!currentOffer) {
+  if (!currentOffer || loadingStatus) {
     return (
       <LoadingScreen />
     );

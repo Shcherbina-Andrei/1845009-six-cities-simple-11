@@ -19,7 +19,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <HistoryRouter history={browserHistory}>
+      <HistoryRouter history={browserHistory} basename={process.env.PUBLIC_URL}>
         <ToastContainer />
         <App />
       </HistoryRouter>
