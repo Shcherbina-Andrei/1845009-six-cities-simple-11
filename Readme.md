@@ -1,2 +1,2 @@
 Проект Six-cities - это сервис по поиску жилья, с возможностями авторизация, оставлять отзывы, сортировать предложения. Все предложения отображаются на карте. Проект реализован на стеке React/Typescript, использован Redux и Axios для работы с данными. Для реализации карты и отображения маркеров использована библиотеке Leaflet. 
-fhttps://shcherbina-andrei.github.io/1845009-six-cities-simple-11/
+https://shcherbina-andrei.github.io/1845009-six-cities-simple-11/
