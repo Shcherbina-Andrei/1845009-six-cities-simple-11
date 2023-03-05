@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/1845009-six-cities-simple-11/static/css/main.3b950d29.css",
-    "main.js": "/1845009-six-cities-simple-11/static/js/main.97235efc.js",
+    "main.js": "/1845009-six-cities-simple-11/static/js/main.319aa794.js",
     "static/media/map@2x.jpg": "/1845009-six-cities-simple-11/static/media/map@2x.f742d39af4691374f728.jpg",
     "static/media/map-big@2x.jpg": "/1845009-six-cities-simple-11/static/media/map-big@2x.5b7f09bc2fdd5c9fd994.jpg",
     "static/media/amsterdam@2x.jpg": "/1845009-six-cities-simple-11/static/media/amsterdam@2x.e1499da49f8b2f00ab5d.jpg",
@@ -36,10 +36,10 @@
     "static/media/ico-place.svg": "/1845009-six-cities-simple-11/static/media/ico-place.1503475012d8c609b748.svg",
     "static/media/triangle.svg": "/1845009-six-cities-simple-11/static/media/triangle.8cd83f400ed9a960a8b2.svg",
     "main.3b950d29.css.map": "/1845009-six-cities-simple-11/static/css/main.3b950d29.css.map",
-    "main.97235efc.js.map": "/1845009-six-cities-simple-11/static/js/main.97235efc.js.map"
+    "main.319aa794.js.map": "/1845009-six-cities-simple-11/static/js/main.319aa794.js.map"
   },
   "entrypoints": [
     "static/css/main.3b950d29.css",
-    "static/js/main.97235efc.js"
+    "static/js/main.319aa794.js"
   ]
 }
