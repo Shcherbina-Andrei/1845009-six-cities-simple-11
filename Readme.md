@@ -6,4 +6,4 @@
 
 **Стек технологий**: React, Typescript, Redux, Redux Toolkit, Axios, Leaflet library, CSS(BEM)
 
-Ознакомьтесь с deploy-версией https://shcherbina-andrei.github.io/1845009-six-cities-simple-11/
+**Ознакомьтесь с deploy-версией**: https://shcherbina-andrei.github.io/1845009-six-cities-simple-11/
