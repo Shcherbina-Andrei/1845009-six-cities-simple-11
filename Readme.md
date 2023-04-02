@@ -4,6 +4,6 @@
 Для авторизованных пользователей есть возможность оставлять отзывы.
 Сервис по поиску жилья, с возможностями авторизация, оставлять отзывы, сортировать предложения. Все предложения отображаются на карте. 
 
-**Стек технологий**: React, Typescript, Redux, Redux Toolkit, Axios, Leaflet library, CSS(BEM)
+**Стек технологий**: React, Typescript, Redux, Redux Toolkit, Axios, Leaflet library, Jest, CSS(BEM)
 
 **Ознакомьтесь с deploy-версией**: https://shcherbina-andrei.github.io/1845009-six-cities-simple-11/
